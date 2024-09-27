@@ -13,13 +13,13 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            item = input("Item to add: ")
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
             print()
             print(f"'{item}' has/have been added to shoppinglist")
             
         elif choice == '2':
-            item = input("Item to remove: ")
+            item = input("Enter the item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"'{item}' has/ have been removed from shoppinglist")
@@ -28,8 +28,6 @@ def main():
             
         elif choice == '3':
             print("Current Shooping List")
-            
-
             
         elif choice == '4':
             print("Goodbye!")
