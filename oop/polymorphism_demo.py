@@ -6,7 +6,7 @@ class Shape:
 
 
 class Rectangle(Shape):
-    def __init__(self, length, width) -> None:
+    def __init__(self, length, width):
         super().__init__()
         self.length = length
         self.width = width
@@ -16,16 +16,10 @@ class Rectangle(Shape):
     
 
 class Circle(Shape):
-    def __init__(self, radius) -> None:
+    def __init__(self, radius):
         super().__init__()
         self.radius = radius
 
     def area(self):
         return math.pi * self.radius ** 2
-    
-
-rect = Rectangle(3, 2)
-circle = Circle(2)
-
-print(rect.area())
-print(circle.area())
+ 
